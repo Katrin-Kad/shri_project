@@ -1,0 +1,21 @@
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(206, 210, 214, 1);
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    max-width: 400px;
+    margin-bottom: 16px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.search-box input::placeholder {
+    color: rgba(206, 210, 214, 1);
+}

@@ -1,0 +1,24 @@
+.star-rating {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 70px;
+  }
+  
+  .star {
+    cursor: pointer;
+    color: #ccc; 
+    margin-right: 5px; 
+  }
+  
+  .filled {
+    color: rgba(255, 85, 0, 1); 
+  }
+  
+  .outlined {
+    color: #ccc; 
+  }
+  
+  .empty {
+    color: #fff; 
+  }
+  

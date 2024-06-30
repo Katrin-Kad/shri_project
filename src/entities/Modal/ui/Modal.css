@@ -1,0 +1,106 @@
+.auth-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    width: 344px;
+    height: 300px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .auth-modal h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .input-auth[type="text"],
+  .input-auth[type="password"] {
+    width: calc(100% - 20px);
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-auth[type="text"]::placeholder,
+  .input-auth[type="password"]::placeholder {
+    color: #bbb;
+  }
+  
+  .btn-auth {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-auth:first-of-type {
+    background-color: #ff5722;
+    color: white;
+    border: 1px solid #ff5722;
+  }
+  
+  .btn-auth:last-of-type {
+    background-color: white;
+    color: #ff5722;
+    border: 1px solid #ff5722;
+  }
+  
+  .btn-auth:last-of-type:hover {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .required {
+    color: red;
+    margin-left: 5px;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+  }
+
+  .auth-text {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    padding-bottom: 8px;
+  }
+  
+  .auth-title {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    padding-bottom: 16px;
+  }
+
+  .red {
+    color: red;
+  }

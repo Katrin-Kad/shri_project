@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100vw; /* Ширина занимает всю страницу */
+}
+
+
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.actor {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
+
+.button_actors {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 32px;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button_actors:disabled {
+    display: none;
+}
+
+.img-actor {
+    width: 160px;
+    height: 228px;
+    border-radius: 8px;
+}
+
+.img-poster {
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
+}
+
+.actor-name {
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 16px;
+}
