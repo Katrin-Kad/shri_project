@@ -71,4 +71,23 @@
     gap: 24px;
     display: flex;
 }
+
+.error-text {
+    margin-bottom: 16px;
+    font-family: "SF Pro Text";
+    text-align: center;
+}
+
+.error {
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.error-title {
+    color: rgba(27, 31, 35, 1);
+}
+
+.error-subtitle {
+    color: rgba(153, 159, 166, 1);
+}
   

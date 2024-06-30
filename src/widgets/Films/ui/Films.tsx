@@ -38,16 +38,25 @@ export const MovieSearchResults: FC<MovieSearchResultsProps> = ({ queryParams })
 
     const { search_result: movies, total_pages: totalPages } = searchData;
     
+    if (movies.length !== 0) {
+      return (
+        <div className="films">
+          {(movies).map((movie) => (
+            <FilmComponent key={movie.id} movie={movie}/>
+          ))}
+          <Pagination 
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
+        </div>
+      )
+    } 
+
     return (
-      <div className="films">
-        {(movies).map((movie) => (
-          <FilmComponent movie={movie}/>
-        ))}
-        <Pagination 
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={setCurrentPage}
-        />
+      <div className="error">
+        <p className="error-text error-title">Фильмы не найдены</p>
+        <p className="error-text error-subtitle">Измените запрос и попробуйте снова</p>
       </div>
     )
 }
