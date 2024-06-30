@@ -34,8 +34,8 @@ export const FilmComponent = ({ movie }) => {
                             <p className="p-info">Описание</p>
                             </div>
                             <div className="info-content">
-                            <p className="p-info">{movie.release_year}</p>
                             <p className="p-info">{movie.genre}</p>
+                            <p className="p-info">{movie.release_year}</p>
                             <p className="p-info">{truncateText(movie.description, 500)}</p>
                             </div>
                         </div>
